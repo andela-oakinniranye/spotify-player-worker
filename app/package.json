@@ -1,0 +1,25 @@
+{
+  "name": "spotify-player-worker",
+  "version": "1.0.0",
+  "description": "Small worker that polls Spotify for recently played song, then gets the dominant color from the image-color-service  and triggers a webhook with this information.",
+  "main": "index.js",
+  "repository": "github.com/andela-oakinniranye/spotify-player-worker",
+  "author": "Oreoluwa <oreoluwa@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "sequelize": "node_modules/.bin/sequelize"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "glob": "^7.1.2",
+    "jsonwebtoken": "^8.1.0",
+    "pg": "^7.4.0",
+    "redis": "^2.8.0",
+    "request": "^2.83.0",
+    "sequelize": "^4.28.6",
+    "sequelize-cli": "^3.2.0",
+    "spotify-web-api-node": "^2.5.0",
+    "umzug-sync": "^1.0.0"
+  }
+}
